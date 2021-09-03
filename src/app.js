@@ -85,7 +85,7 @@ class App{
                                 li.removeClass('selected')
                                 this.#talentSelected.delete(talent);
                             } else {
-                                if(this.#talentSelected.size==8) {
+                                if(this.#talentSelected.size==5) {
                                     this.hint('只能选5个天赋');
                                     return;
                                 }
