@@ -113,8 +113,8 @@ class App{
         talentPage
             .find('#next')
             .click(()=>{
-                if(this.#talentSelected.size!=8) {
-                    this.hint('请选择8个天赋');
+                if(this.#talentSelected.size!=5) {
+                    this.hint('请选择5个天赋');
                     return;
                 }
                 this.#totalMax = 20 + this.#life.getTalentAllocationAddition(Array.from(this.#talentSelected).map(({id})=>id));
