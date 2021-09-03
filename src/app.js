@@ -63,7 +63,7 @@ class App{
             <div class="head" style="font-size: 1.6rem">天赋抽卡</div>
             <button id="random" class="mainbtn" style="top: 50%;">10连抽！</button>
             <ul id="talents" class="selectlist"></ul>
-            <button id="next" class="mainbtn" style="top:auto; bottom:0.1em">请选择3个</button>
+            <button id="next" class="mainbtn" style="top:auto; bottom:0.1em">请选择5个</button>
         </div>
         `);
 
@@ -86,7 +86,7 @@ class App{
                                 this.#talentSelected.delete(talent);
                             } else {
                                 if(this.#talentSelected.size==8) {
-                                    this.hint('只能选8个天赋');
+                                    this.hint('只能选5个天赋');
                                     return;
                                 }
 
