@@ -9,7 +9,7 @@ class App{
     #life;
     #pages;
     #talentSelected = new Set();
-    #totalMax=20;
+    #totalMax=30;
     #isEnd = false;
     #selectedExtendTalent = null;
     #hintTimeout;
