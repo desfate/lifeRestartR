@@ -85,8 +85,8 @@ class App{
                                 li.removeClass('selected')
                                 this.#talentSelected.delete(talent);
                             } else {
-                                if(this.#talentSelected.size==3) {
-                                    this.hint('只能选3个天赋');
+                                if(this.#talentSelected.size==8) {
+                                    this.hint('只能选8个天赋');
                                     return;
                                 }
 
