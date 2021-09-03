@@ -9,7 +9,7 @@ class App{
     #life;
     #pages;
     #talentSelected = new Set();
-    #totalMax=35;
+    #totalMax=30;
     #isEnd = false;
     #selectedExtendTalent = null;
     #hintTimeout;
@@ -117,7 +117,7 @@ class App{
                     this.hint('请选择5个天赋');
                     return;
                 }
-                this.#totalMax = 20 + this.#life.getTalentAllocationAddition(Array.from(this.#talentSelected).map(({id})=>id));
+                this.#totalMax = 30 + this.#life.getTalentAllocationAddition(Array.from(this.#talentSelected).map(({id})=>id));
                 this.switch('property');
             })
 
@@ -307,7 +307,7 @@ class App{
                 this.#life.talentExtend(this.#selectedExtendTalent);
                 this.#selectedExtendTalent = null;
                 this.#talentSelected.clear();
-                this.#totalMax = 20;
+                this.#totalMax = 30;
                 this.#isEnd = false;
                 this.switch('index');
             });
@@ -345,7 +345,7 @@ class App{
                 clear: ()=>{
                     talentPage.find('ul.selectlist').empty();
                     talentPage.find('#random').show();
-                    this.#totalMax = 20;
+                    this.#totalMax = 30;
                 },
             },
             property: {
